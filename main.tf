@@ -17,4 +17,9 @@ module "iam_role" {
 module "iam_ci_user" {
   source     = "./modules/iam-ci-user"
   user_name  = "terraform-ci-user"
+
+  tags = {
+    Owner       = "Razvan"
+    Environment = "dev"
+}
 }

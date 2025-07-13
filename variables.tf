@@ -21,3 +21,7 @@ variable "user_name" {
   description = "The IAM username to create"
   type        = string
 }
+variable "tags" {
+  type    = map(string)
+  default = {}
+}

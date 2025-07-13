@@ -12,3 +12,13 @@ resource "aws_iam_user_policy" "this" {
 
   policy = file("${path.module}/../../policies/iam-ci-user-policy.json")
 }
+
+resource "aws_iam_user" "this" {
+  name = var.user_name
+
+  tags = var.tags
+
+  lifecycle {
+    ignore_changes = [tags]
+  }
+}
