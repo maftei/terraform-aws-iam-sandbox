@@ -14,11 +14,8 @@
         "iam:List*",
         "iam:Get*",
         "iam:CreateUser",
-        "iam:DeleteUser",
-        "iam:PutUserPolicy",
-        "iam:AttachUserPolicy",
+        "iam:TagUser",
         "iam:CreateRole",
-        "iam:DeleteRole",
         "iam:PutRolePolicy",
         "iam:AttachRolePolicy",
         "iam:PassRole"
