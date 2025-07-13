@@ -25,9 +25,5 @@
       ],
       "Resource": "*"
     }
-  ],
-  "Description": "Policy for CI user to manage IAM users and roles, and access S3 resources.",
-  "PolicyName": "IAM-CI-User-Policy",
-  "Path": "/"
+  ]
 }
-
