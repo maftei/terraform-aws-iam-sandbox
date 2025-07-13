@@ -12,9 +12,22 @@
       "Effect": "Allow",
       "Action": [
         "iam:List*",
-        "iam:Get*"
+        "iam:Get*",
+        "iam:CreateUser",
+        "iam:DeleteUser",
+        "iam:PutUserPolicy",
+        "iam:AttachUserPolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:PutRolePolicy",
+        "iam:AttachRolePolicy",
+        "iam:PassRole"
       ],
       "Resource": "*"
     }
-  ]
+  ],
+  "Description": "Policy for CI user to manage IAM users and roles, and access S3 resources.",
+  "PolicyName": "IAM-CI-User-Policy",
+  "Path": "/"
 }
+
